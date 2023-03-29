@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.main {
+  height: 783px;
+  background: url('../img/bg.jpg') center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main-child {
+  z-index: 10;
+}
+
+.main h1 {
+  font-size: 64px;
+  max-width: 510px;
+  text-align: center;
+}
+
+.gradient {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
