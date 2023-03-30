@@ -9,6 +9,27 @@ body {
   color: #fff;
 }
 
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  top: 28px;
+  left: 56px;
+}
+
+.header a {
+  display: inline-block;
+  background:#e50914;
+  color: white;
+  align-self: flex-start;
+  padding: 8px 18px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
 .main {
   height: 783px;
   background: url('../img/bg.jpg') center;
@@ -17,16 +38,61 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  text-align: center;
+}
+
+.main-child span {
+  font-size: 26px;
+  display: grid;
+  justify-items: center;
+}
+
+.form-cta {
+  display: grid;
+  grid-template-columns: 500px 250px;
+  margin: 30px 0 10px;
+}
+
+.form-cta input {
+  padding: 20px 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.form-cta button {
+  background: #e50914;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form-cta button::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background: url(../img/seta.svg);
+  margin-left: 15px;
+}
+
+.form-cta button {
+  background: #f40612;
+}
+
+.main-child p {
+  font-size: 19px;
 }
 
 .main-child {
-  z-index: 10;
+  z-index: 1;
 }
 
 .main h1 {
   font-size: 64px;
   max-width: 510px;
-  text-align: center;
 }
 
 .gradient {
